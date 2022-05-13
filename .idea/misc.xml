@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/default_option_border_bg.xml" value="0.464" />
+        <entry key="app/src/main/res/drawable/selected_option_border_bg.xml" value="0.395" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.31616040966178804" />
-        <entry key="app/src/main/res/layout/activity_quiz_questions.xml" value="0.38076923076923075" />
+        <entry key="app/src/main/res/layout/activity_quiz_questions.xml" value="0.46378619854266817" />
       </map>
     </option>
   </component>

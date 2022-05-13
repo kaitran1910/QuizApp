@@ -1,9 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".QuizQuestionsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:background="@color/white"
+        app:cardCornerRadius="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tv_Question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="What country does \n this flag belong to?" />
+
+            <ImageView
+                android:id="@+id/iv_Image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:contentDescription="Quiz Image"
+                tools:src="@drawable/ic_flag_of_argentina" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/pb_Progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:indeterminate="false"
+                    android:max="9"
+                    android:minHeight="50dp"
+                    android:progress="5" />
+
+                <TextView
+                    android:id="@+id/tv_Progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:textSize="14sp"
+                    tools:text="0/9" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:background="@color/white"
+        app:cardCornerRadius="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tv_Option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/default_option_border_bg"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textColor="@color/textGrey"
+                android:textSize="20sp"
+                tools:text="1" />
+
+            <TextView
+                android:id="@+id/tv_Option2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/default_option_border_bg"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textColor="@color/textGrey"
+                android:textSize="20sp"
+                tools:text="2" />
+
+            <TextView
+                android:id="@+id/tv_Option3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/default_option_border_bg"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textColor="@color/textGrey"
+                android:textSize="20sp"
+                tools:text="3" />
+
+            <TextView
+                android:id="@+id/tv_Option4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/default_option_border_bg"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textColor="@color/textGrey"
+                android:textSize="20sp"
+                tools:text="4" />
+
+            <Button
+                android:id="@+id/btn_Submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/design_default_color_primary"
+                android:text="SUBMIT"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:cornerRadius="16dp" />
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
