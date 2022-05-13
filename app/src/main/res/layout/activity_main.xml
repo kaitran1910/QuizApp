@@ -5,8 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_bg"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:paddingTop="64dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -25,7 +26,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:background="@color/white"
-        app:cardCornerRadius="8dp">
+        app:cardCornerRadius="32dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -59,22 +60,25 @@
                 android:layout_marginTop="16dp">
 
                 <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_Name"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="e.g. Kai"
+                    android:hint="Name"
                     android:inputType="textCapWords"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/textGreyLight" />
+                    android:textColor="@color/black"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
+                android:id="@+id/btn_Start"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@color/design_default_color_primary"
                 android:text="Start"
                 android:textSize="16sp"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                app:cornerRadius="16dp"
+                />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 </LinearLayout>
