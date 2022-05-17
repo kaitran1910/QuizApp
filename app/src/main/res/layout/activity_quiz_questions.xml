@@ -11,22 +11,26 @@
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="32dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_weight="3"
         android:background="@color/white"
         app:cardCornerRadius="32dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:padding="20dp">
 
             <TextView
                 android:id="@+id/tv_Question"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:textColor="@color/black"
                 android:textSize="20sp"
@@ -36,15 +40,17 @@
             <ImageView
                 android:id="@+id/iv_Image"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginTop="16dp"
+                android:layout_weight="1"
                 android:contentDescription="Quiz Image"
                 tools:src="@drawable/ic_flag_of_argentina" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginTop="16dp"
+                android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
@@ -73,26 +79,28 @@
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_margin="32dp"
+        android:layout_weight="4"
         android:background="@color/white"
         app:cardCornerRadius="32dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:padding="20dp">
 
             <TextView
                 android:id="@+id/tv_Option1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_margin="10dp"
+                android:layout_weight="1"
                 android:background="@drawable/default_option_border_bg"
                 android:gravity="center"
-                android:padding="16dp"
+                android:padding="0dp"
                 android:textColor="@color/textGrey"
                 android:textSize="20sp"
                 tools:text="1" />
@@ -100,11 +108,13 @@
             <TextView
                 android:id="@+id/tv_Option2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_margin="10dp"
+                android:layout_weight="1"
                 android:background="@drawable/default_option_border_bg"
                 android:gravity="center"
-                android:padding="16dp"
+                android:includeFontPadding="false"
+                android:padding="0dp"
                 android:textColor="@color/textGrey"
                 android:textSize="20sp"
                 tools:text="2" />
@@ -112,11 +122,12 @@
             <TextView
                 android:id="@+id/tv_Option3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_margin="10dp"
+                android:layout_weight="1"
                 android:background="@drawable/default_option_border_bg"
                 android:gravity="center"
-                android:padding="16dp"
+                android:padding="0dp"
                 android:textColor="@color/textGrey"
                 android:textSize="20sp"
                 tools:text="3" />
@@ -124,11 +135,12 @@
             <TextView
                 android:id="@+id/tv_Option4"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_margin="10dp"
+                android:layout_weight="1"
                 android:background="@drawable/default_option_border_bg"
                 android:gravity="center"
-                android:padding="16dp"
+                android:padding="0dp"
                 android:textColor="@color/textGrey"
                 android:textSize="20sp"
                 tools:text="4" />
@@ -136,8 +148,9 @@
             <Button
                 android:id="@+id/btn_Submit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
                 android:background="@color/design_default_color_primary"
                 android:text="SUBMIT"
                 android:textColor="@color/white"
@@ -145,7 +158,5 @@
                 android:textStyle="bold"
                 app:cornerRadius="16dp" />
         </LinearLayout>
-
-
     </com.google.android.material.card.MaterialCardView>
 </LinearLayout>
